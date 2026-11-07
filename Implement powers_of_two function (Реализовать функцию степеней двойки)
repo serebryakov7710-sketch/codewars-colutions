@@ -1,0 +1,7 @@
+def powers_of_two(n):
+    result = []
+    # Цикл идет от 0 до n включительно
+    for i in range(n + 1):
+        # Возводим 2 в степень i и добавляем в список
+        result.append(2 ** i)
+    return result

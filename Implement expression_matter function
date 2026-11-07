@@ -1,0 +1,9 @@
+def expression_matter(a, b, c):
+    variant_1 = a + b + c
+    variant_2 = a * b * c
+    variant_3 = (a + b) * c
+    variant_4 = a * (b + c)
+    variant_5 = a + b * c
+    variant_6 = a * b + c
+    
+    return max(variant_1, variant_2, variant_3, variant_4, variant_5, variant_6)

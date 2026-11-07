@@ -1,0 +1,11 @@
+def digitize(n: int) -> list[int]:
+    # Превращаем число в текст (строку)
+    num_str = str(n)
+    
+    result = []
+    # Проходимся по каждой цифре по порядку
+    for char in num_str:
+        # Превращаем её обратно в число и добавляем в список
+        result.append(int(char))
+        
+    return result

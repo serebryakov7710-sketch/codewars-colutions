@@ -1,0 +1,7 @@
+def double_char(s):
+    result = ""
+    # Цикл перебирает каждый символ в строке
+    for char in s:
+        # Удваиваем символ и добавляем в результат
+        result += char * 2
+    return result

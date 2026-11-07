@@ -1,0 +1,11 @@
+def tower_builder(n_floors):
+    tower = []
+    for i in range(n_floors):
+        # Количество пробелов с одной стороны
+        spaces = " " * (n_floors - i - 1)
+        # Количество звёздочек на этаже
+        stars = "*" * (2 * i + 1)
+        # Собираем этаж целиком
+        floor = spaces + stars + spaces
+        tower.append(floor)
+    return tower

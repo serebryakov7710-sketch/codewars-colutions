@@ -1,0 +1,13 @@
+def points(games):
+    total_points = 0
+    for game in games:
+        # Разделяем строку счета по двоеточию на два числа
+        x, y = game.split(":")
+        
+        # Сравниваем голы и начисляем очки
+        if int(x) > int(y):
+            total_points += 3
+        elif int(x) == int(y):
+            total_points += 1
+            
+    return total_points

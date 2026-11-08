@@ -1,0 +1,10 @@
+def square_or_square_root(arr):
+    result = []
+    for num in arr:
+        # Проверяем, является ли корень целым числом
+        root = num ** 0.5
+        if root.is_integer():
+            result.append(int(root))  # Добавляем корень (приводим к int, чтобы не было .0)
+        else:
+            result.append(num ** 2)   # Добавляем число в квадрате
+    return result

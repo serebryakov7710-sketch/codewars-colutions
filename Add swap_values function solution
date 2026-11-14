@@ -1,0 +1,4 @@
+def swap_values(pair):
+    temp = pair[0]
+    pair[0] = pair[1]
+    pair[1] = temp
